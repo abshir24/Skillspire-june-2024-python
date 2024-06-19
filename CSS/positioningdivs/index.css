@@ -1,0 +1,10 @@
+.parent{
+    border:solid black 2px;
+    height:100px;
+}
+
+.child{
+    width:50px;
+    height:50px;
+    margin-top:20px;
+}

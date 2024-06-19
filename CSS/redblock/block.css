@@ -1,0 +1,26 @@
+div{
+    outline:dotted red 2px;
+}
+
+#blue{
+    width:600px;
+    height:600px;
+    background-color: blue;
+    overflow: auto
+}
+
+#red{
+    width:100px;
+    height:100px;
+    background-color: red;
+    margin-left:250px;
+    margin-top: 250px;
+    overflow: auto
+}
+
+#green{
+    width:20px;
+    height:20px;
+    background-color:green;
+    
+}
