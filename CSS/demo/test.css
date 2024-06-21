@@ -1,8 +1,12 @@
-/* .greenbox{
-    background-color:green;
-    width:100px;
-    height:100px;
+/* *{
+    border:solid red 2px;
 } */
+
+#parent{
+    display:inline-block;
+    border:solid red 2px;
+    width:30%;
+}
 
 .greenbox{
     background-color:green;
@@ -24,6 +28,14 @@ img{
     border:10px solid black;
 }
 
+/* h1,p{
+    display:inline-block; 
+    width: 70%; 
+} */
+
+/* a,img{
+    display: block;
+} */
 
 /* #parent{
     border:solid red 2px;
