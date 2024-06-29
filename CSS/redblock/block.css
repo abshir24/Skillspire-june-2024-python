@@ -2,20 +2,26 @@ div{
     outline:dotted red 2px;
 }
 
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:1000px;
+}
+
 #blue{
     width:600px;
     height:600px;
     background-color: blue;
-    overflow: auto
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #red{
     width:100px;
     height:100px;
     background-color: red;
-    margin-left:250px;
-    margin-top: 250px;
-    overflow: auto
 }
 
 #green{
