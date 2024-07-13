@@ -1,0 +1,41 @@
+<html>
+    <head>
+      
+    </head>
+
+    <body>
+        <form id="name-form">
+            <label>Name:</label><br>
+            <input type="text" name="fullname" id="fullname"><br>
+
+            <label>Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+
+            <label>Age:</label><br>
+            <input type="number" name="age" id="age"><br>
+
+            <input type="submit" value="Submit!">
+        </form>
+
+        <div id="info">
+
+        </div>
+
+        
+        <script>  
+            var form = document.getElementById("name-form")
+            var info = document.getElementById("info")
+
+            form.addEventListener('submit',function(){
+                event.preventDefault()
+                var nameInput = document.getElementById("fullname")
+                var emailInput = document.getElementById("email")
+                var ageInput = document.getElementById("age")
+
+                document.write("<h1>Name: " + nameInput.value + "</h1>")
+                document.write("<h1>Email: " + emailInput.value + "</h1>")
+                document.write("<h1>Age: " + ageInput.value + "</h1>")
+            })
+        </script>
+    </body>
+</html>
