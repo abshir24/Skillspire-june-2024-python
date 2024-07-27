@@ -48,14 +48,13 @@ function skillspire(array){
 
     return count
 }
-skillspire( ["test","skillspire","skillspire"] )
+// skillspire( ["test","skillspire","skillspire"] )
 
 
 
 
-
-var array = [1,2,3,4,5]
-for(let counter = 0;counter < array.length ;counter++){
-    console.log(array[counter])
+function sum(number1,number2){
+    return number1 + number2
 }
 
+console.log( sum(1,2) )
