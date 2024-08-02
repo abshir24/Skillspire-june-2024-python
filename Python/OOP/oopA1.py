@@ -1,11 +1,6 @@
 class Car:
-    make = "Toyota"
-    model = "Rav 4"
     topspeed = 150
     location = 0
-
-    def printMakeAndModel(self):
-        print(f"Make: {self.make}", f"Model: {self.model}") 
     
     def printTopSpeed(self):
         print(f"Top speed: {self.topspeed}")
@@ -18,6 +13,8 @@ class Car:
 
 
 car1 = Car()
+
+car1.printTopSpeed()
 
 car1.drive()
 car1.drive()
