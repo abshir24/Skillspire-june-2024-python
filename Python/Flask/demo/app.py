@@ -1,13 +1,23 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
 
-@app.route('/home/<number>')
+app.secret_key = 'secret'
 
-def root(number):
-   
-    return render_template("index.html", number = number)
+@app.route('/')
+
+def root():
+    return render_template("form.html")
+
+@app.route('/formdata', methods = ['GET','POST'])
+
+def formdata():
+    session['username'] = request.form['username']
+    session['password'] = request.form['password']
+
+    print(session)
+
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug = True, port = 3000)
-
