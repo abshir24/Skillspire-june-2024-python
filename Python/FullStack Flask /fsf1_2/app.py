@@ -53,6 +53,21 @@ def displayusers():
     return render_template("users.html", users = users)
 
 
+@app.route('/login', methods = ['GET','POST'])
+
+def login():
+    username = request.form['user_name']
+    password = request.form['password']
+
+    user = User.query.filter_by(user_name = username, password = password).first()
+
+    if user == None:
+        return "<h1 style='color:red'> This user doesn't exist </h1>"
+
+    return render_template("user.html", user = user)
+
+
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()    
