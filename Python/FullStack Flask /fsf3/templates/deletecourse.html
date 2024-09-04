@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Courses</title>
+        <style>
+            table,tr,td{
+                border:solid black 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Are you sure you want to delete the following course?</h1>
+        <h2>Name: {{course.name}}</h2>
+        <h2>Description: {{course.description}}</h2>
+
+        <a href="/"><button>No</button></a>
+
+        <a href="/delete/{{course.id}}"><button>Yes</button></a>
+    </body>
+</html>
