@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>FSF5</title>
+    </head>
+
+    <body>
+        <h1>Hello {{session.username}} !!</h1>
+        <h2>Add a post:</h2>
+
+        <form action ="/addpost" method = "POST">
+            <label>Title:</label>
+            <input type ="text" name="title"><br>
+
+            <label>Post:</label>
+            <input type ="text" name="post"><br>
+
+            <input type="Submit" value="Submit">
+        </form>
+
+        <h1>All Posts:</h1>
+        {% for post in posts %}
+            <h1>-------------------------------------------------------</h1>
+            <p>Title: {{post.title}}</p>
+            <p>Post: {{post.post}}</p>
+            <p>Created At: {{post.date_added}}</p>
+            <p>User: {{post.username}}</p>
+            <h1>-------------------------------------------------------</h1>
+        {% endfor %}
+    </body>
+</html>

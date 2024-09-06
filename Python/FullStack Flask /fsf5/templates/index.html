@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>FSF5</title>
+    </head>
+
+    <body>
+        <h1>Register:</h1>
+
+        <form action ="/register" method = "POST">
+            <label>Username:</label>
+            <input type ="text" name="username"><br>
+
+            <label>Email:</label>
+            <input type ="email" name="email"><br>
+
+            <label>Password:</label>
+            <input type ="password" name="password"><br>
+
+            <input type="Submit" value="Submit">
+        </form>
+
+
+        <h1>Login:</h1>
+
+        <form action ="/login" method = "POST">
+            <label>Email:</label>
+            <input type ="email" name="email"><br>
+
+            <label>Password:</label>
+            <input type ="password" name="password"><br>
+
+            <input type="Submit" value="Submit">
+        </form>
+
+        <!-- if session['error'] exists display error if not don't display -->
+    </body>
+</html>
