@@ -7,5 +7,6 @@ from . import views
 urlpatterns = [
     path(r'', views.index),
     path('displayinfo', views.displayinfo),
-    path('displaytime', views.displaytime)
+    path('displaytime', views.displaytime),
+    path('displayname/<name>', views.displayname)
 ]

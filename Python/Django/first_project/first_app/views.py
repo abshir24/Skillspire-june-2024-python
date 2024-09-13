@@ -18,3 +18,7 @@ def displaytime(request):
     current_time = datetime.now()
 
     return render(request, "time.html",context = {"current_time": current_time} )
+
+
+def displayname(request, name):
+    return render(request, "name.html", context = {"name": name} )
