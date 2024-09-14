@@ -1,4 +1,17 @@
-<h1>Name: {{ name }}</h1>
+<!-- <h1>Name: {{ name }}</h1>
 <h1>Food: {{ food }}</h1>
-<h1>Vacation: {{ vacation }}</h1>
+<h1>Vacation: {{ vacation }}</h1> -->
 
+<form action="/printdata" method="POST">
+    {% csrf_token %} 
+    <label>Name: </label>
+    <input type="text" name ="name"> </br>
+
+    <label>Email: </label>
+    <input type="email" name ="email"> </br>
+
+    <label>Favorite Food: </label>
+    <input type="text" name ="food"> </br>
+
+    <input type="submit" value="Submit">
+</form>
