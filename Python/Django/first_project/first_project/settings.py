@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'demo',
     'first_app', ### added this line!
     "django.contrib.admin",
     "django.contrib.auth",

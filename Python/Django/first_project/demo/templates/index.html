@@ -1,0 +1,8 @@
+<!-- For loop that counts from 1-10 -->
+
+{% for number in arr_nums %}
+    {% if number|divisibleby:2 %}
+        <h1>Even</h1>
+    {% endif %}
+    <h1>{{ number }} </h1>
+{% endfor %}
