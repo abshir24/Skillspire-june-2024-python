@@ -1,8 +1,8 @@
-<!-- For loop that counts from 1-10 -->
+<form action="/printdata" method="POST">
+    {% csrf_token %} 
+    <label>Name: </label>
+    <input type="text" name ="name"> </br>
 
-{% for number in arr_nums %}
-    {% if number|divisibleby:2 %}
-        <h1>Even</h1>
-    {% endif %}
-    <h1>{{ number }} </h1>
-{% endfor %}
+
+    <input type="submit" value="Submit">
+</form>
