@@ -1,0 +1,7 @@
+{% for number in nums %}
+    {% if number|divisibleby:2 %}
+        <h3>Even: {{ number }}</h3>
+    {% else %}
+    <h3>Odd: {{ number }}</h3>
+    {% endif %}
+{% endfor %}
