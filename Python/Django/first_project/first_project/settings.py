@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'djA4',
     'demo',
+    'djA4',
     'first_app', ### added this line!
     "django.contrib.admin",
     "django.contrib.auth",
