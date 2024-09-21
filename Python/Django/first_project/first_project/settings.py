@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'djA6_7',
+    'djA7',
+    'djA6',
     'demo',
     'djA4',
     'first_app', ### added this line!

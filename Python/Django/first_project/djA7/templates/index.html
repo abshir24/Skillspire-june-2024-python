@@ -1,0 +1,29 @@
+<form action ='/adduser' method="POST">
+    {% csrf_token %} 
+    <label>Name:</label>
+    <input type="text" name="name"> <br>
+
+    <label>Height:</label>
+    <input type="number" name="height"> <br>
+
+    <label>Weight:</label>
+    <input type="number" name="weight"> <br>
+
+    <label>Dietary preference:</label>
+    <select name="dietary_preference">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="No preference">No preference</option>
+    </select>
+
+    <input type="submit" value="Submit!">
+</form>
+
+<h1>All Users:</h1>
+<ol>
+    {% for user in users %}
+        <li><a href="/displayuser/{{user.id}}"> {{ user.name }}</a></li>
+    {% endfor %}
+</ol>
+
+    
