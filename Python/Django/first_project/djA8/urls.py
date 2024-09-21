@@ -5,6 +5,5 @@ from . import views
 
 urlpatterns = [
     path(r'', views.index),
-    path('adduser', views.adduser),
-    path('displayuser/<user_id>', views.displayuser),
+    path('addcourse', views.addcourse)
 ]

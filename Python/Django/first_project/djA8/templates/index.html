@@ -1,0 +1,15 @@
+<h1>Add a new course:</h1>
+
+<form action ='/addcourse' method="POST">
+    {% csrf_token %} 
+    <label>Name:</label>
+    <input type="text" name="name"> <br>
+
+    <label>Description:</label>
+    <input type="text" name="description"> <br>
+
+    <input type="submit" value="Add!">
+</form>
+
+
+    
