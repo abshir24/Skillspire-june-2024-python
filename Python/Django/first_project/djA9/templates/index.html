@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>DJA9</title>
+        <style>
+            table,tr,td{
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Users</h1>
+
+        <table>
+            <tr>
+                <td>Id</td>
+                <td>Full Name</td>
+                <td>Email</td>
+                <td>Created At</td>
+                <td>Actions</td>
+            </tr>
+
+            {% for user in users %}
+                <tr>
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.created_date}}</td>
+                    <td>
+                        <a href="/showuser/{{user.id}}">Show</a>
+                        <a href="/edituser/{{user.id}}">Edit</a>
+                        <a href="/deleteuser/{{user.id}}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <a href="/adduserform">Add new User</a>
+    </body>
+</html>
+
+

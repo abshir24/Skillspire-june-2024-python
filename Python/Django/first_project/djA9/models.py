@@ -3,8 +3,8 @@ from django.utils import timezone
 
 # Create your models here.
 
-class Course(models.Model):
+class User(models.Model):
     name = models.CharField(max_length=200)
-    details = models.TextField()
+    email = models.CharField(max_length=200)
     created_date = models.DateTimeField(default = timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
