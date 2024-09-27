@@ -7,5 +7,8 @@ urlpatterns = [
     path(r'', views.index),
     path('adduserform', views.adduserform),
     path('adduser', views.adduser),
-    path('showuser/<user_id>', views.showuser)
+    path('showuser/<user_id>', views.showuser),
+    path('edituser/<user_id>', views.edituser),
+    path('deleteuser/<user_id>', views.deleteuser),
+    path('edituserform/<user_id>', views.edituserform)
 ]

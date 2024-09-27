@@ -18,5 +18,23 @@ def showuser(request,user_id):
     user = User.objects.get(id=user_id)
 
     return render(request, "showuser.html", context={"user": user})
-    
 
+def edituserform(request, user_id):
+    return render(request, 'edituserform.html', context={"user_id": user_id})
+
+def edituser(request, user_id):
+    user = User.objects.get(id=user_id)
+
+    user.name = request.POST['name']
+    user.email = request.POST['email']
+
+    user.save()
+
+    return redirect('/')
+    
+def deleteuser(request,user_id):
+    user = User.objects.get(id=user_id)
+
+    user.delete()
+
+    return redirect('/')
